@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | The Late Shift Café</title>
+  <meta name="description" content="The Late Shift Café: a student-run coffee spot open until midnight.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html">The Late Shift <span>Café</span></a>
+      <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap page-title"><h1>Get in touch</h1><p>Book a study table, ask about events, or send us your feedback.</p></div>
+    <section>
+      <div class="wrap contact">
+        <form action="thanks.html" method="get">
+          <div class="field"><label for="name">Your name <span class="req">*</span></label><input type="text" id="name" name="name" placeholder="Alex Rivera" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email address <span class="req">*</span></label><input type="email" id="email" name="email" placeholder="alex@campus.edu" autocomplete="email" required></div>
+          <div class="field"><label for="topic">What is this about?</label>
+            <select id="topic" name="topic"><option value="table">Reserve a study table</option><option value="event">Plan an event</option><option value="feedback">Feedback</option><option value="other">Something else</option></select></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us how we can help"></textarea></div>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+        <aside>
+          <h2>Find us</h2>
+          <p>Student Union, Ground Floor. Look for the amber sign next to the library entrance.</p>
+          <dl><dt><strong>Hours</strong></dt><dd style="margin:0 0 1rem;color:var(--muted)">Mon to Thu 7:30 am to midnight</dd>
+          <dt><strong>Email</strong></dt><dd style="margin:0;color:var(--muted)">hello@lateshift.example</dd></dl>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 The Late Shift Café. A student-run project for HTML5 Forms &amp; Multimedia.</p>
+      <p>Student Union, Ground Floor &middot; Open until midnight</p>
+    </div>
+  </footer>
+</body>
+</html>
